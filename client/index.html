@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+  
+  #div2 {
+    background-color: white;
+    width: 1360px;
+    height: 300px;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    opacity: 0.9;
+}
+
+#button1 {
+  color : black;
+  font-size : 40px;
+  height : 70px;
+  width: 350px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 100px;
+  margin-left: 350px;
+}
+
+#img1 {
+ width: 200px;
+    height: 300px;
+  margin-top: -280px;
+  margin-bottom: 0px;
+  margin-right: 200px;
+  margin-left: 800px;
+}
+
+#h21 {
+  color: white;
+  text-align: center;
+  font-size: 40px ; 
+  margin-top: 0px;
+  font-family: "Comic Sans MS";
+}
+#a1 {
+
+  margin-top: -300px;
+  margin-bottom: 100px;
+  margin-right: 200px;
+  margin-left: 1200px;
+}
+
+</style>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+    <script src="app/auth/auth.js"></script>
+    <script src="app/services/services.js"></script>
+    <script src="app/app.js"></script> 
+
+
+    <body style="background-color:black;" ng-app="stickman" > 
+
+    <!-- <h2 id= "h21"> Stickman fighter :)</h2> -->
+    <!-- <div><button  type="button" class="btn btn-primary" id = "button1">GO</button> </div> -->
+  <div class="container" id = "div2">   
+    <div ><button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo" id = "button1" style="font-family:Comic Sans MS" >Stickman </button>
+    <p  id="demo" class="collapse" >
+     <img  src="stikman2.png" id = "img1" >
+     <!-- <a href="#/listVideo" id="a1" >Go </a> -->
+    
+    </div></div>
+
+
+<!-- <div class="container">
+  <h2>vedios</h2>
+  <button type="button" class="btn btn-default">Default</button>
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-success">Success</button>
+  <button type="button" class="btn btn-info">Info</button>
+  <button type="button" class="btn btn-warning">Warning</button>
+  <button type="button" class="btn btn-danger">Danger</button>
+  <button type="button" class="btn btn-link">Link</button>      
+</div>
+
+ -->
+<div class="im-centered">
+  <div class="row">
+<h2 id= "h21">watch videos</h2>
+    <div class="col-sm-4">
+      <video width="400" height="400" controls>
+  <source src="1.mp4" type="video/mp4">
+</video>
+    </div>
+
+<div class="col-sm-4">
+  <video width="400" height="400" controls>
+  <source src="2.mp4" type="video/mp4">
+</video>
+    </div>
+
+    <div class="col-sm-4">
+      <video width="400" height="400" controls>
+  <source src="3.mp4" type="video/mp4">
+</video>
+    </div>
+
+<br>
+    <div class="col-sm-4">
+      <video width="400" height="400" controls>
+  <source src="4.mp4" type="video/mp4">
+</video>
+    </div>
+
+    <div class="col-sm-4">
+      <video width="400" height="400" controls>
+  <source src="5.mp4" type="video/mp4">
+</video>
+    </div>
+
+
+    <div class="col-sm-4">
+      <video width="400" height="400" controls>
+  <source src="6.mp4" type="video/mp4">
+</video>
+    </div>
+
+    </div>
+
+
+    <script type="text/javascript" > 
+    var app=angular.module('stickman', [])
+      app.controller('listVideoController', function ($scope) {
+      $scope.videoSources = ["https://www.youtube.com/watch?v=MoDGzRa1LW0", "https://www.youtube.com/embed/watch?v=IrVZW3gTxMs","https://www.youtube.com/watch?v=FCFp0W8U-VI","https://www.youtube.com/watch?v=TvyPoN027Ng"];
+      })
+    </script>
+
+
+
+
+  </body>
+</html>
+
+
+
